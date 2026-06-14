@@ -218,4 +218,99 @@ console.log(rps('rock','paper'))
 
 
 //------ Loops --------
+// for loop
+console.log("for loop")
+for(let i = 1; i< 101 ; i++ ){
+    console.log(i);
+}
+
+
+//while loop
+console.log("while loop")
+let i = 1;
+while(i < 101){
+    if(i % 2 === 0){
+        console.log(i);
+    }
+    i++;
+}
+
+//break and continue
+
+//Q1. Print numbers from 1 to 10 using a for loop
+for( let i = 1 ; i< 11; i++){
+    console.log(i);
+} 
+
+//Q2. Print numbers from 10 to 1 using a for loop
+for(let i = 10; i>0 ; i--){
+    console.log(i)
+}
+
+//Q3. Print numbers from 10 to 1 using a while loop
+let start = 10
+while(start<1){
+    console.log(start);
+    start--;
+}
+
+
+//Q4. Print odd numbers from 1 to 15 using a while loop
+let j = 1;
+while(j < 16){
+    if(j % 2 === 1){
+        console.log(j);
+    }
+    j++;
+}
+
+// Q5. Print the multiplication table of 5
+
+for(i = 1; i<11; i++){
+    console.log(`5 * ${i} = ${5 * i}  `);
+}
  
+// Find the sum of numbers from 1 to 100 using a loop
+let sum = 0;
+for(let i = 1 ; i < 101 ; i++){
+    sum = sum + i ;
+}
+console.log(sum);
+
+// Print all the numbers between 1 to 50 that are divisible by 3 and 5
+for(let i =1; i < 51 ; i++ ){
+    if(i %3 === 0 && i % 5 === 0){
+        console.log(i)
+    }
+}
+
+// Ask the user for a number
+let val = prompt("Enter a number:")
+
+for(let i = 1; i <= val; i++){
+    if(i % 2 ===0){
+        console.log(`${i} is even`)
+    }
+    else{
+        console.log(`${i} is odd`)
+    }
+}
+
+
+// Stop at first multiple of 7
+let val1 = prompt("Enter a value:")
+for(let i = 1 ; i<= val1;i++){
+    console.log(i);
+    if(i % 7 === 0){
+
+        break;
+    } 
+}
+
+//print all the numbers from 1 to 50 only skip when the number is divisible by 3
+for(let i = 1; i < 51 ; i++){
+    if(i % 3 === 0) continue;
+    console.log(i)
+}
+
+  
