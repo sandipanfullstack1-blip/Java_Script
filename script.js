@@ -742,4 +742,3 @@ Object.entries(course).forEach(function (val){
 })
 
 
-//---------DOM --- Document Object Model -----------
